@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //--------------------------------------------airthmatic operator
+    let a = 8;
+    b = 4;
+    const c = a + b;
+    // const c = a - b;
+    // const c = a / b;
+    // const c = a % b;
+    console.log(c);
+
+    //---------------------------------------------power of number using math.pow and **
+    const result = a ** b;
+    const results = Math.pow(10, 10);
+    // const results = Math.pow(a, b);
+    console.log("line:35", result);
+    console.log("line:36", results);
+
+    //---------------------------------------------doubt Increment
+    // let x = 10;
+    // console.log(x++);
+
+    // let y = x++;
+    // console.log(x++);
+
+    // let x = 10;
+    // let y = ++x;
+    // console.log(y);
+
+    //--------------------------------------- assignment operator (a += b) = (a = a+b)
+    let aa = 2;
+    let bb = "vaishali";
+    let cc = (aa *= bb);
+    console.log("line:42", (aa += bb)); //2vaishali -------doubt
+    console.log("line:43", cc); //NaN
+
+    let d = 30;
+    let e = 20;
+    console.log((d /= e)); //1.5
+
+    //------------------------------------------------comparison operator
+    // == for compairing the data === data + data type
+
+    let f = 10;
+    let g = 10;
+    console.log(f == g); //true
+    console.log(f === g); //true
+
+    let f1 = "vaishali";
+    let g1 = "aniket";
+    console.log(f1 == g1); //false
+    console.log(f1 === g1); //false
+
+    let f2 = "10";
+    let g2 = "18";
+    console.log(f2 == g2); //false
+    console.log(f2 === g2); //false
+
+    let f3 = "10";
+    let g3 = 10;
+    console.log(f3 == g3); //true
+    console.log(f3 === g3); //false
+
+    let Age = 19;
+    if (Age < 18) {
+      console.log("not eligible");
+    } else {
+      console.log("eligible");
+    }
+
+    let i1 = 20;
+    let j1 = 10;
+    console.log(i1 != j1); //true
+
+    let i2 = "20";
+    let j2 = 20;
+    console.log(i2 != j2); //false
+
+    let i3 = "vaishali";
+    let j3 = "vaishali";
+    console.log(i3 !== j3); //false
+
+    let i4 = "vaishali";
+    let j4 = "1";
+    console.log(i4 !== j4); //true
+
+    let i5 = 1;
+    let j5 = "1";
+    console.log(i5 !== j5); //true
+
+    let i6 = "10";
+    let j6 = "vaishali";
+    console.log(i6 !== j6); //true
+
+    let i = "1";
+    let j = 1;
+    console.log(i !== j); //true
+
+    let i8 = "aniket";
+    let j8 = "vaishali";
+    console.log(i8 != j8); //true
+
+    // true
+    // let a = "aniket";
+    // let b = "1";
+    // console.log(a != b);
+
+    // true
+    // let a = "2";
+    // let b = "1";
+    // console.log(a != b);
+
+    // true
+    // let a = 1;
+    // let b = 2;
+    // console.log(a != b);
+
+    //  false
+    // let a = 1;
+    // let b = "1";
+    // console.log(a != b);
+
+    // let a = 1;
+    // let b = "1";
+    // console.log(a != b);
+    // false
+
+    // --------------------------------------logical && operator(both condition must be true)
+    let m = 10;
+    let n = 20;
+    if (m <= 10 && m === n) {
+      console.log("hello");
+    } else {
+      console.log("helloagain");
+    }
+
+    let percentage = 100;
+    if (percentage <= 100 && percentage > 70) {
+      console.log(" pass in 1st divison ");
+    } else if (percentage < 70 && percentage > 50) {
+      console.log("pass in second division");
+    } else if (percentage < 50 && percentage >= 30) {
+      console.log("pass in third division");
+    } else {
+      console.log("you are fail");
+    }
+    // -----------------------------------------logical ||  operator(any one condition will true statment eill run)
+
+    let marks = 19;
+
+    if (marks > 20 || marks == 20) {
+      console.log("good");
+    } else {
+      console.log("bad");
+    }
+    // -----------------------------------logical not  operator (first it will compare and then reverse the ans value)
+    // --- false----
+    let a1 = 0;
+    let b1 = 1;
+    let c1 = !(a1 != b1);
+    console.log("line", c1);
+
+    // -------- false------
+    let a2 = 0;
+    let b2 = 0;
+    let c2 = !(a2 == b2);
+    console.log("line0", c2);
+
+    // -----true-----
+    let a3 = "vaishali";
+    let b3 = "0";
+    let c3 = !(a3 == b3);
+    console.log("line1", c3);
+
+    let a4 = "vaishali";
+    let b4 = "annu";
+    let c4 = !(a4 == b4);
+    console.log("line2", c4);
+
+    // -------------------------------ternaroy operator ? (sorthand of if else statement)
+    let age = 10;
+    let city = "bhopal";
+    let entry = age >= 20 && city == "bhopal" ? "allowed" : "not allowed";
+    console.log(entry);
+  </script>
+</html>

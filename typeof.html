@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const array = ["vaishali", 1, true, { name: "vaishali" }, null, ""];
+    console.log(array); //type of array is object
+    console.log(typeof array);
+    console.log(typeof array[0]);
+    console.log(typeof array[5]);
+    console.log(typeof array[4]); //type of null is object
+
+    typeof typeof 12; // more then one typeof means string
+    typeof NaN; // number
+    typeof 1 * 2; //NaN
+    typeof (1 * 2); //number
+    typeof 1 + 2 * 2; //number4
+    typeof 12 + 50; //number50
+
+    typeof 10 + 10 + +"annu"; // number10NaN
+    typeof 10 + 10 + +"10"; //number1010
+
+    typeof (10 + 10 + +"annu"); // number b/c 10 + 10 + + "annu" is NaN and type of NaN is number
+    typeof (10 + 10 + +"10"); // number
+    typeof("10"+10 + +"vaishali");//string
+
+    typeof (1 + 2 + 3 + "vaishali"); // string
+    typeof ("1" + 2 + 3 + "vaishali"); // string
+
+    10 + "vaishali";
+    ("10vaishali");
+
+    // isNaN(10 + 10); not a number or not a mathematical expression
+    // false;
+
+    // isNaN("vaishali");
+    // true;
+
+    // airthmatic operators do a arthimatical operation (except plus before string)
+    12 * "12";
+    144;
+
+    12 + 12;
+    24;
+
+    12 + "12";
+    ("1212");
+
+    12 - "vaishali";
+    NaN;
+
+    "10" + +10 + "100";
+    ("1010100");
+
+    "10" + +"10";
+    ("1010");
+
+    10 + +"10";
+    20;
+
+    "1010" + +10;
+    ("101010");
+
+    10 + +"10";
+    20;
+
+    10 + "vaishali";
+    ("10vaishali");
+
+    typeof 10 + "vaishali";
+    ("numbervaishali");
+
+    typeof (10 + "vaishali");
+    ("string");
+
+    "10" + +"vaishali";
+    ("10NaN");
+
+    10 + +"vaishali";
+    NaN;
+
+    // truthy and falsy value
+    !!0;
+    false;
+
+    !!undefined;
+    false;
+
+    !!null;
+    false;
+
+    !!"";
+    false;
+
+    !!"0";
+    true;
+
+    !!"vaishali";
+    true;
+
+    !!"10";
+    true;
+
+    !!10;
+    true;
+
+    // how to typecast a value into  boolean
+    // Boolean(value);
+    // give truthy or falsy value inside the brackets
+
+    // ! exclama give the reverse of truthy and falsy value
+    // !! gie truthy and falsy value
+  </script>
+</html>
